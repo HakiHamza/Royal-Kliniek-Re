@@ -1,5 +1,5 @@
 const el = document.getElementById("icon-hover__dropdown");
-const hiddenDropdown = document.getElementById("dropdown-con");
+const hiddenDropdown = document.getElementById("dropdown-icon");
 
 el.addEventListener("mouseover", function handleMouseOver() {
   hiddenDropdown.style.visibility = "visible";

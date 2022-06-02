@@ -36,19 +36,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.15);
         width: 700px;
         position: fixed;
-
-        .icon-nav {
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            text-transform: uppercase;
-            justify-content: center;
-            align-items: center;
-        }
 
         li {
             text-decoration: none;
@@ -65,21 +55,38 @@ body {
                 opacity: 0;
                 transition: 1s ease;
                 padding: 5px;
+                font-size: 12px;
             }
 
             &:hover .icon {
-                transform: translateY(-17px);
+                transform: translateY(-11px);
                 transition: 1s;
             }
 
             &:hover .text {
                 opacity: 1;
-                transform: translateY(5px);
+                transform: translateY(7px);
             }
 
-            a {
+            .icon-nav {
                 display: flex;
                 flex-direction: column;
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 25%;
+                transition: all 1s ease-in;
+                padding: 1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:hover .icon-nav {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 25%;
+                transform: scale(1.05);
             }
 
             h3 {
@@ -93,17 +100,95 @@ body {
             .dropdown-content {
                 transition: all 1s ease-in-out;
                 position: absolute;
-                top: 100%;
+                top: 130%;
                 visibility: hidden;
                 opacity: 0;
-                min-width: 1200px;
-                right: -250%;
-                height: 300px;
-                background-color: #fff;
+                min-width: 1100px;
+                right: -600%;
+                height: 250px;
+                background-color: rgba(255, 255, 255, 0.9);
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                padding: 1rem;
+
+                .dropdown-col__one {
+                    display: flex;
+                    flex-direction: column;
+                    z-index: 1000;
+
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        padding: 1rem;
+                        text-align: center;
+                    }
+
+                    h4 {
+                        text-align: center;
+                    }
+                }
             }
         }
     }
 }
+
+// SECTION 1
+
+.s1 {
+    background-image: url(../images/Background-dummy3.jpg);
+    background-size: cover;
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(201, 232, 254, 1);
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .waves {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 15vh;
+        min-height: 250px;
+        max-height: 300px;
+    }
+
+    /* Animation */
+
+    .parallax {
+        > use {
+            animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+            &:nth-child(1) {
+                animation-delay: -2s;
+                animation-duration: 7s;
+            }
+            &:nth-child(2) {
+                animation-delay: -3s;
+                animation-duration: 10s;
+            }
+            &:nth-child(3) {
+                animation-delay: -4s;
+                animation-duration: 13s;
+            }
+            &:nth-child(4) {
+                animation-delay: -5s;
+                animation-duration: 20s;
+            }
+        }
+    }
+    @keyframes move-forever {
+        0% {
+            transform: translate3d(-90px, 0, 0);
+        }
+        100% {
+            transform: translate3d(85px, 0, 0);
+        }
+    }
+}
+
 // SECTION 2
 .s2 {
     .slide-one {
@@ -128,6 +213,7 @@ body {
 
             p {
                 font-size: 14px;
+                text-align: center;
             }
 
             ion-icon {
@@ -182,6 +268,182 @@ body {
             }
         }
     }
+
+    .slide-three {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transition: all 1s ease-in;
+        .slide-two__object {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 2rem;
+            column-gap: 2rem;
+            padding: 2rem;
+            background-image: url(../images/Background-dummy.2jpg.jpg);
+            background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            transition: all 1s ease-in;
+
+            &:hover {
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 2rem;
+                column-gap: 2rem;
+                padding: 2rem;
+                transform: scale(1.01);
+                background-image: url(../images/Background-dummy.2jpg.jpg);
+                background-size: cover;
+                box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            }
+
+            p {
+                padding: 2rem;
+            }
+
+            ion-icon {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .slide-four {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transition: all 1s ease-in;
+        .slide-two__object {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 2rem;
+            column-gap: 2rem;
+            padding: 2rem;
+            background-image: url(../images/Background-dummy.2jpg.jpg);
+            background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            transition: all 1s ease-in;
+
+            &:hover {
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 2rem;
+                column-gap: 2rem;
+                padding: 2rem;
+                transform: scale(1.01);
+                background-image: url(../images/Background-dummy.2jpg.jpg);
+                background-size: cover;
+                box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            }
+
+            p {
+                padding: 2rem;
+            }
+
+            ion-icon {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .slide-five {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transition: all 1s ease-in;
+        .slide-two__object {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 2rem;
+            column-gap: 2rem;
+            padding: 2rem;
+            background-image: url(../images/Background-dummy.2jpg.jpg);
+            background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            transition: all 1s ease-in;
+
+            &:hover {
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 2rem;
+                column-gap: 2rem;
+                padding: 2rem;
+                transform: scale(1.01);
+                background-image: url(../images/Background-dummy.2jpg.jpg);
+                background-size: cover;
+                box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            }
+
+            p {
+                padding: 2rem;
+            }
+
+            ion-icon {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+// SECTION 3 TEAM SECTION
+
+.s3 {
+    .team__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        .team__card {
+            width: 100%;
+            max-width: 400px;
+            padding: 1rem;
+            text-align: center;
+            img {
+                border-radius: 50%;
+                padding: 1rem;
+                width: 100%;
+                max-width: 250px;
+            }
+
+            h4 {
+                padding: 1rem;
+            }
+
+            p {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.s4 {
+    background-color: #fff;
 }
 
 // MEDIA QUERIES PHONE
@@ -276,17 +538,101 @@ body {
             }
         }
     }
-    .s4 {
+    .s2 {
         .slide-one {
-            display: grid;
+            display: flex;
             height: 100vh;
-            grid-template-columns: repeat(1, 1fr);
+
+            background-image: url(../images/Background-dummy.jpg);
+            box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
             .slideone__box-one {
                 border: 1px solid white;
                 width: 100%;
                 max-width: 100%;
                 height: 100%;
-                background: blue;
+                max-height: 25vh;
+                position: relative;
+                display: flex;
+                row-gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 1.5rem;
+                margin: auto;
+
+                p {
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+                ion-icon {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .s3 {
+        .team__container {
+            display: flex;
+            width: 30vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                border-radius: 50%;
+                padding: 1rem;
+                width: 100%;
+                max-width: 250px;
+            }
+
+            h4 {
+                padding: 1rem;
+            }
+
+            p {
+                padding: 1rem;
+            }
+        }
+
+        div {
+            .waves {
+                position: relative;
+                width: 100%;
+                display: none;
+                margin-top: auto;
+                margin-bottom: -7px; /*Fix for safari gap*/
+                height: 40px;
+                min-height: 40px;
+            }
+        }
+
+        /* Animation */
+
+        .parallax > use {
+            animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+        .parallax > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+        }
+        .parallax > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+        }
+        .parallax > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+        }
+        .parallax > use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+        }
+        @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px, 0, 0);
+            }
+            100% {
+                transform: translate3d(85px, 0, 0);
             }
         }
     }

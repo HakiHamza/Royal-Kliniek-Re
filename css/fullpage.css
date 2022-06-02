@@ -1,34 +1,31 @@
-body {
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
-.s1 {
-    background-image: url("/images/bgOne.jpg");
-    background-size: cover;
-}
-
 .s2 {
     background-image: url("/images/bgTwo.jpg");
     background-size: cover;
 }
 
 .s3 {
-    background-image: url("/images/bgThree.jpg");
-    background-size: cover;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(201, 232, 254, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(201, 232, 254, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(201, 232, 254, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c9e8fe",GradientType=1);
+}
+
+.s4 {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(201, 232, 254, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(201, 232, 254, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(201, 232, 254, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c9e8fe",GradientType=1);
+}
+
+.waves {
+    width: 100vw;
+    max-width: 100%;
 }
 
 .slide-one {
     background-color: red;
-}
-
-.slide-two {
-    background-color: yellow;
-    max-width: 100%;
-    width: auto;
-    height: 100%;
-    position: relative;
-    margin: auto;
 }
 
 .slide-three {
@@ -37,52 +34,4 @@ body {
 
 .slide-four {
     background-color: salmon;
-}
-
-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    max-width: 700px;
-    position: absolute;
-    left: 20%;
-    top: 25%;
-}
-
-.child {
-    background-color: white;
-    width: auto;
-    max-width: 700px;
-    height: 150px;
-    position: absolute;
-    left: 45%;
-    top: 37%;
-    padding: 1rem;
-}
-
-@media only screen and (max-width: 600px) {
-    .parent {
-        width: auto;
-        max-width: 1300px;
-        height: 600px;
-        border: 2px solid red;
-        display: flex;
-        flex-direction: column;
-    }
-    img {
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: auto;
-        max-width: 700px;
-        position: static;
-        margin: 10px;
-    }
-
-    .child {
-        background-color: white;
-        width: auto;
-        max-width: 700px;
-        position: static;
-        margin: 10px;
-    }
 }
