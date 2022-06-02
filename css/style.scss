@@ -104,7 +104,7 @@ body {
         }
     }
 }
-
+// SECTION 2
 .s2 {
     .slide-one {
         display: grid;
@@ -123,7 +123,6 @@ body {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
             padding: 1.5rem;
             margin: auto;
 
@@ -136,7 +135,56 @@ body {
             }
         }
     }
+
+    .slide-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transition: all 1s ease-in;
+        .slide-two__object {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 2rem;
+            column-gap: 2rem;
+            padding: 2rem;
+            background-image: url(../images/Background-dummy.2jpg.jpg);
+            background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            transition: all 1s ease-in;
+
+            &:hover {
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 2rem;
+                column-gap: 2rem;
+                padding: 2rem;
+                transform: scale(1.01);
+                background-image: url(../images/Background-dummy.2jpg.jpg);
+                background-size: cover;
+                box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+            }
+
+            p {
+                padding: 2rem;
+            }
+
+            ion-icon {
+                font-size: 25px;
+            }
+        }
+    }
 }
+
+// MEDIA QUERIES PHONE
 
 @media screen and (max-width: 600px) {
     .hamburger-icon {
