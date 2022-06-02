@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.hamburger-icon {
+  z-index: 10000;
+  position: fixed;
+  left: 85%;
+  font-size: 54px;
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+  margin: 0.5rem;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar ion-icon {
+  font-size: 20px;
+  color: black;
+}
+
+.navbar .container-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 700px;
+  position: fixed;
+}
+
+.navbar .container-navbar .icon-nav {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container-navbar li {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 2rem;
+  position: relative;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.navbar .container-navbar li .icon {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.navbar .container-navbar li .text {
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  padding: 5px;
+}
+
+.navbar .container-navbar li:hover .icon {
+  -webkit-transform: translateY(-17px);
+          transform: translateY(-17px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navbar .container-navbar li:hover .text {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.navbar .container-navbar li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .container-navbar li h3 {
+  font-weight: 300;
+  font-size: 14px;
+  position: absolute;
+}
+
+.navbar .container-navbar .dropdown {
+  position: relative;
+}
+
+.navbar .container-navbar .dropdown .dropdown-content {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 1200px;
+  right: -250%;
+  height: 300px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger-icon {
+    z-index: 10000;
+    position: fixed;
+    left: 85%;
+    font-size: 54px;
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar ion-icon {
+    font-size: 20px;
+    color: black;
+  }
+  .navbar .container-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    max-width: 100vh;
+    position: fixed;
+  }
+  .navbar .container-navbar .icon-nav {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .container-navbar li {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem 2rem;
+    position: relative;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+  }
+  .navbar .container-navbar li .icon {
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+  }
+  .navbar .container-navbar li .text {
+    opacity: 1;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    padding: 5px;
+  }
+  .navbar .container-navbar li:hover .icon {
+    -webkit-transform: translateY(-17px);
+            transform: translateY(-17px);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .navbar .container-navbar li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .container-navbar li h3 {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .navbar .container-navbar .dropdown {
+    position: relative;
+  }
+  .navbar .container-navbar .dropdown .dropdown-content {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 1200px;
+    right: -250%;
+    height: 300px;
+    background-color: #fff;
+  }
+}
+
+.s4 .slide-one {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.s4 .slide-one .slideone__box-one {
+  border: 1px solid white;
+  width: 100%;
+  max-width: 398px;
+  height: 100%;
+  background: blue;
+}
+/*# sourceMappingURL=style.css.map */

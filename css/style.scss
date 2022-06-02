@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+// navigation bar
+
+.hamburger-icon {
+    z-index: 10000;
+    position: fixed;
+    left: 85%;
+    font-size: 54px;
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+    margin: 0.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    ion-icon {
+        font-size: 20px;
+        color: black;
+    }
+
+    .container-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 700px;
+        position: fixed;
+
+        .icon-nav {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            text-decoration: none;
+            display: block;
+            padding: 1rem 2rem;
+            position: relative;
+            transition: all 2s ease-in-out;
+
+            .icon {
+                transition: all 2s ease-in-out;
+            }
+
+            .text {
+                opacity: 0;
+                transition: 1s ease;
+                padding: 5px;
+            }
+
+            &:hover .icon {
+                transform: translateY(-17px);
+                transition: 1s;
+            }
+
+            &:hover .text {
+                opacity: 1;
+                transform: translateY(5px);
+            }
+
+            a {
+                display: flex;
+                flex-direction: column;
+            }
+
+            h3 {
+                font-weight: 300;
+                font-size: 14px;
+                position: absolute;
+            }
+        }
+        .dropdown {
+            position: relative;
+            .dropdown-content {
+                transition: all 1s ease-in-out;
+                position: absolute;
+                top: 100%;
+                visibility: hidden;
+                opacity: 0;
+                min-width: 1200px;
+                right: -250%;
+                height: 300px;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger-icon {
+        z-index: 10000;
+        position: fixed;
+        left: 85%;
+        font-size: 54px;
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 1000;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        ion-icon {
+            font-size: 20px;
+            color: black;
+        }
+
+        .container-navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: white;
+            width: 300px;
+            height: 100%;
+            max-width: 100vh;
+            position: fixed;
+
+            .icon-nav {
+                padding: 1rem;
+                display: flex;
+                text-decoration: none;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+            }
+
+            li {
+                text-decoration: none;
+                display: flex;
+                padding: 1rem 2rem;
+                position: relative;
+                transition: all 2s ease-in-out;
+
+                .icon {
+                    transition: all 2s ease-in-out;
+                }
+
+                .text {
+                    opacity: 1;
+                    transition: 1s ease;
+                    padding: 5px;
+                }
+
+                &:hover .icon {
+                    transform: translateY(-17px);
+                    transition: 1s;
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                h3 {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+            .dropdown {
+                position: relative;
+                .dropdown-content {
+                    transition: all 1s ease-in-out;
+                    position: absolute;
+                    top: 100%;
+                    visibility: hidden;
+                    opacity: 0;
+                    min-width: 1200px;
+                    right: -250%;
+                    height: 300px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.s4 {
+    .slide-one {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        .slideone__box-one {
+            border: 1px solid white;
+            width: 100%;
+            max-width: 398px;
+            height: 100%;
+            background: blue;
+        }
+    }
+}
