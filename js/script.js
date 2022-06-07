@@ -15,6 +15,15 @@ el.addEventListener("mouseout", function handleMouseOut() {
 
 // SMALL CONTACT VISIBILITY
 
+// function smallContact() {
+//   document.getElementById("contact").style.visibility = "visible";
+// }
+
 function smallContact() {
-  document.getElementById("contact").style.visibility = "visible";
+  var hiddenContact = document.getElementById("contact");
+  if (hiddenContact.style.visibility === "hidden") {
+    hiddenContact.style.visibility = "visible";
+  } else {
+    hiddenContact.style.visibility = "hidden";
+  }
 }
