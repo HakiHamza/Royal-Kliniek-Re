@@ -15,13 +15,13 @@
 
 <nav class="navbar">
     <ul class="container-navbar">
-        <li><a class="icon-nav" href="#"><ion-icon class="icon" name="home-outline"></ion-icon><h3 class="text">Home</h3></a></li>
-        <li><a class="icon-nav" href="#"><ion-icon class="icon" name="information-circle-outline"></ion-icon><h3 class="text">About</h3></a></li>
-        <li><a class="icon-nav"href="#"><ion-icon class="icon" name="people-outline"></ion-icon><h3 class="text">Team</h3></a></li>
-        <li><a class="icon-nav"href="#"><ion-icon class="icon" name="chatbubbles-outline"></ion-icon><h3 class="text">Contact</h3></a></li>
+        <li><a class="icon-nav" href="#"><ion-icon name="home-outline"></ion-icon><h3 class="text">Home</h3></a></li>
+        <li><a class="icon-nav" href="#"><ion-icon name="information-circle-outline"></ion-icon><h3 class="text">About</h3></a></li>
+        <li><a class="icon-nav"href="#"><ion-icon name="people-outline"></ion-icon><h3 class="text">Team</h3></a></li>
+        <li><a class="icon-nav"href="#"><ion-icon name="chatbubbles-outline"></ion-icon><h3 class="text">Contact</h3></a></li>
         <li class="dropdown">
             <div id="icon-hover__dropdown"  class="icon-nav">
-                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+                <ion-icon name="chevron-down-outline"></ion-icon>
                 <div id="dropdown-icon" class="dropdown-content">
 
                     <div class="dropdown-col__one">
@@ -63,8 +63,10 @@
 </nav>
 
 
+
+
     <!-- SMALL CONTANT SECTION FIXED  -->
-<div class="fixed-contact" onclick="smallContact()">
+<!-- <div class="fixed-contact" onclick="smallContact()">
     <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
     <div class="small-contact" id="contact">
         <form action="">
@@ -77,7 +79,9 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-</div>
+</div> -->
+
+<!-- 81D3EB-->
 
 
     <!-- // -->
@@ -86,8 +90,25 @@
 
 
     <!-- SECTIONS START  -->
+<!-- 
+    <ul class="custom_nav" id="my-nav">
+        <li><ion-icon name="home-outline"></ion-icon></li>
+        <li><ion-icon name="information-circle-outline"></ion-icon></li>
+        <li><ion-icon name="people-outline"></ion-icon></li>
+        <li><ion-icon name="chatbubbles-outline"></ion-icon></li>
+        <li><ion-icon name="add-circle-outline"></ion-icon></li>
+    </ul> -->
+
+    <!-- <ul id="my-nav">
+        <li><i class="fas fa-bell" aria-hidden="true"></i></li>
+        <li><i class="fas fa-bell" aria-hidden="true"></i></li>
+        <li><i class="fas fa-bell" aria-hidden="true"></i></li>
+        <li><i class="fas fa-bell" aria-hidden="true"></i></li>
+    </ul> --> 
 
 <div id="fullpage">
+
+
 
     <div class="section s1">
         <h1>ROYAL KLINIEK</h1>
@@ -98,10 +119,10 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(201, 232, 254, 0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(87, 202, 195, 0.7)" />
             <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255, 255, 255, 0.5)" />
             <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255, 255, 255, 0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(201, 232, 254, 0.9)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(87, 202, 195, 0.9)" />
             </g>
             </svg>
         </div>
@@ -110,8 +131,10 @@
 
     <div class="section s2">
 
+
         <!-- SLIDE ONE  -->
         <div class="slide slide-one">
+
 
 
             <div class="slideone__box-one">
@@ -174,7 +197,34 @@
 
     <!-- SLIDES -->
 
-        <div class="slide slide-two" data-anchor="slide-1"> 
+
+        
+        <div class="slide slide-four" data-anchor="slide-1">
+
+            <div class="slide-four__object">
+                <img src="./images/Location dummy1.jpg" alt="">
+                <div class="slide-four__textarea">
+                    <h2>Vitamine Cocktail Therapie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus a modi non, hic sunt minus quam suscipit delectus labore, inventore aperiam natus alias, cupiditate sint ipsum nulla et. Quia beatae excepturi doloribus dolorum suscipit perspiciatis officiis, laborum veniam. Quo officia modi id fuga exercitationem, nobis pariatur placeat quis delectus?</p>
+                </div>
+                
+            </div>
+
+            <div class="slide-four__object_two">
+
+                <div class="slide-four__textarea">
+                    <h2>Microneedling</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus a modi non, hic sunt minus quam suscipit delectus labore, inventore aperiam natus alias, cupiditate sint ipsum nulla et. Quia beatae excepturi doloribus dolorum suscipit perspiciatis officiis, laborum veniam. Quo officia modi id fuga exercitationem, nobis pariatur placeat quis delectus?</p>
+                </div>
+                <img src="./images/Location dummy2.jpg" alt="">
+            </div>
+
+
+
+        </div>
+
+
+        <div class="slide slide-two" data-anchor="slide-2"> 
 
             <div class="slide-two__object">
             
@@ -192,23 +242,6 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum commodi nisi exercitationem a amet expedita rerum incidunt excepturi! Ad, quod iusto quaerat delectus harum odit, odio ex assumenda beatae error ratione explicabo omnis ullam officiis tenetur aspernatur cumque repudiandae itaque maiores! Enim adipisci reprehenderit deserunt architecto expedita vitae exercitationem.</p>                
                 </div>    
                 <img src="./images/Location dummy1.jpg" alt="">
-            </div>
-
-        </div>
-
-        <div class="slide slide-three" data-anchor="slide-2">
-
-            <div class="slide-three__object">
-                <img src="./images/Location dummy1.jpg" alt="">
-                <h2>Oorkaars Therapie</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus a modi non, hic sunt minus quam suscipit delectus labore, inventore aperiam natus alias, cupiditate sint ipsum nulla et. Quia beatae excepturi doloribus dolorum suscipit perspiciatis officiis, laborum veniam. Quo officia modi id fuga exercitationem, nobis pariatur placeat quis delectus?</p>
-            </div>
-
-            <div class="slide-three__object_two">
-                <img src="./images/Location dummy2.jpg" alt="">
-                <h2>PRP therapie</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus a modi non, hic sunt minus quam suscipit delectus labore, inventore aperiam natus alias, cupiditate sint ipsum nulla et. Quia beatae excepturi doloribus dolorum suscipit perspiciatis officiis, laborum veniam. Quo officia modi id fuga exercitationem, nobis pariatur placeat quis delectus?</p>
-
             </div>
 
         </div>
@@ -237,15 +270,24 @@
 
         </div>
 
-        <div class="slide slide-five" data-anchor="slide-4">
+        <div class="slide slide-two" data-anchor="slide-4"> 
 
             <div class="slide-two__object">
-                <h2>Plasmalift</h2>
-
+            
+                <img src="./images/Location dummy1.jpg" alt="">
+                <div class="slide-two__text">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum commodi nisi exercitationem a amet expedita rerum incidunt excepturi! Ad, quod iusto quaerat delectus harum odit, odio ex assumenda beatae error ratione explicabo omnis ullam officiis tenetur aspernatur cumque repudiandae itaque maiores! Enim adipisci reprehenderit deserunt architecto expedita vitae exercitationem.</p>                
+                </div>    
             </div>
 
-            <div class="slide-two__object">
-                <h2>Tanden bleken</h2>
+            <div class="slide-two__object_two">
+                <div class="slide-two__text">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum commodi nisi exercitationem a amet expedita rerum incidunt excepturi! Ad, quod iusto quaerat delectus harum odit, odio ex assumenda beatae error ratione explicabo omnis ullam officiis tenetur aspernatur cumque repudiandae itaque maiores! Enim adipisci reprehenderit deserunt architecto expedita vitae exercitationem.</p>                
+                </div>    
+                <img src="./images/Location dummy1.jpg" alt="">
             </div>
 
         </div>
@@ -273,6 +315,7 @@
             <div class="location__one">
 
                 <img src="./images/Location dummy2.jpg" alt="">
+                <div class="line"></div>
                 <div class="location__text">
                     <h3>Royal Kliniek Bornem</h3>
                     <p>2880 Bornem</p>
@@ -290,6 +333,8 @@
                     <p>Loremstraat 123</p>
                     <p>04123456789</p>
                 </div>                    
+                <div class="line"></div>
+
                 <img src="./images/Location dummy1.jpg" alt="">
 
             </div>
@@ -301,37 +346,66 @@
 
         <div class="footer_one">
             <hr>
-            <div class="footer_socials">
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <ion-icon name="logo-whatsapp"></ion-icon>
+            
+            <div class="footer-contact">
+                <form action="">
+                    <label for="Email">E-mail:</label>
+                    <input type="text" id="email" name="email">
+                    <label for="behandeling">Behandeling:</label>
+                    <select id="behandeling" name="behandeling">
+                        <option value="empty">...</option>
+                        <option value="cupping">Cupping/Hijama</option>
+                        <option value="bloedzuigers">Bloedzuigers</option>
+                        <option value="oorkaars">Oorkaars</option>
+                        <option value="prp">PRP</option>
+                        <option value="vitamine">Vitamine Cocktail</option>
+                        <option value="microneedling">Microneedling</option>
+                        <option value="plasmalift">Plastalift</option>
+                        <option value="tandenbleken">Tandenbleken</option>
+                      </select>
+                    <button type="submit" value="Submit">Indienen</button>
+                    <div class="footer_socials">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </div>
+                </form>
+
             </div>
+
             <hr>
 
             <div class="footer-links">
 
-                <div class="footer-links__one">
-                    <h3>title</h3>
-                    <p>Email@Gmail.com</p>
-                    <p>+324123456789</p>
-                </div>
                 <div class="footer-links__two">
                     <h3>Title</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
+                    <a href="#s1">Home</a>
+                    <a href="#s2">Behandelingen</a>
+                    <a href="#s3">Uw dokter</a>
+                    <a href="#s4">Locaties</a>
                 </div>
 
                 <div class="footer-links__three">
-                    <h3>Title</h3>
+                    <h3>Meer</h3>
                     <a href="#">Link 1</a>
                     <a href="#">Link 1</a>
                     <a href="#">Link 1</a>
                     <a href="#">Link 1</a>
                 </div>
 
+                <div class="footer-links__one">
+                    <h3>Contact Info</h3>
+                    <p>Email@Gmail.com</p>
+                    <p>+324123456789</p>
+                    <p>Bornem/Limburg</p>
+                    <p>2880/9999</p>
+                </div>
+
+                <div class="footer-links__four">
+                    <div class="logo"></div>
+                    <h1>Royal Kliniek</h1>
+                </div>
 
             </div>
 
@@ -339,6 +413,7 @@
         </div>
 
     </div>
+    <div class="elfsight-app-53b5c858-e92b-49ee-8e25-feba4b54a828"></div>
 
 </div>
 
@@ -347,11 +422,15 @@
     <script src="./js/script.js"></script>
 
     <!-- : Fullpage JS file -->
+    <script src="./fullpage.dropEffect.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.js"></script>
     <script type="text/javascript" src="./js/fullpage.js"></script>
 
     <!-- css icons  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Whatsapp widget  -->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </body>
 </html>
