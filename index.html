@@ -13,12 +13,12 @@
     <!-- NAVIGATION BAR  -->
     <ion-icon class="hamburger-icon" name="reorder-three-outline"></ion-icon>
 
-<nav class="navbar">
+<!-- <nav class="navbar">
     <ul class="container-navbar">
-        <li><a class="icon-nav" href="#"><ion-icon name="home-outline"></ion-icon><h3 class="text">Home</h3></a></li>
-        <li><a class="icon-nav" href="#"><ion-icon name="information-circle-outline"></ion-icon><h3 class="text">About</h3></a></li>
-        <li><a class="icon-nav"href="#"><ion-icon name="people-outline"></ion-icon><h3 class="text">Team</h3></a></li>
-        <li><a class="icon-nav"href="#"><ion-icon name="chatbubbles-outline"></ion-icon><h3 class="text">Contact</h3></a></li>
+        <li><a class="icon-nav" href="#"><ion-icon class="nav-icon" name="home-outline"></ion-icon><h3 class="text">Home</h3></a></li>
+        <li><a class="icon-nav" href="#"><ion-icon class="nav-icon" name="information-circle-outline"></ion-icon><h3 class="text">About</h3></a></li>
+        <li><a class="icon-nav"href="#"><ion-icon class="nav-icon" name="people-outline"></ion-icon><h3 class="text">Team</h3></a></li>
+        <li><a class="icon-nav"href="#"><ion-icon class="nav-icon" name="chatbubbles-outline"></ion-icon><h3 class="text">Contact</h3></a></li>
         <li class="dropdown">
             <div id="icon-hover__dropdown"  class="icon-nav">
                 <ion-icon name="chevron-down-outline"></ion-icon>
@@ -26,6 +26,7 @@
 
                     <div class="dropdown-col__one">
                         <h4>Title Links</h4>
+                        <hr>
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
@@ -34,6 +35,7 @@
 
                     <div class="dropdown-col__one">
                         <h4>Title Links</h4>
+                        <hr>
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
@@ -42,6 +44,7 @@
 
                     <div class="dropdown-col__one">
                         <h4>Title Links</h4>
+                        <hr>
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
@@ -50,16 +53,40 @@
 
                     <div class="dropdown-col__one">
                         <h4>Title Links</h4>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        <a href="#">Link 4</a>
+                        <hr>
+                        <div class="footer_socials">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </div>
+                        <div class="footer_socials">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
         </li>
     </ul>
+</nav> -->
+
+<nav class="navbar">
+    <div class="toggle"></div>
+    <div class="navigation">
+        <ul>
+           <li><a href="#section-one">home</a></li><br>
+           <li><a href="#section-two">work</a></li><br>
+           <li><a href="#section-three">about us</a></li><br>
+           <li><a href="#section-four">contact</a></li><br>
+        </ul>
+
+        <div class="nav-images">
+           <img src="./images/image-one.jpg" alt="" id="image-1">
+           <img src="./images/image-two.jpg" alt="" id="image-2">
+           <img src="./images/image-three.jpg" alt="" id="image-3">
+        </div>
+     </div>
 </nav>
 
 
@@ -111,7 +138,12 @@
 
 
     <div class="section s1">
-        <h1>ROYAL KLINIEK</h1>
+        <div class="header-title">
+            <div class="logo"><img src="./images/rsz_logo-02.png" alt=""></div>
+            <h1>ROYAL KLINIEK</h1>
+
+        </div>
+
         <div class="waves__placement">
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -119,10 +151,10 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(87, 202, 195, 0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(87, 202, 195, 0.5" />
             <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255, 255, 255, 0.5)" />
             <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255, 255, 255, 0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(87, 202, 195, 0.9)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(87, 202, 195, 0.7)" />
             </g>
             </svg>
         </div>
@@ -135,62 +167,68 @@
         <!-- SLIDE ONE  -->
         <div class="slide slide-one">
 
-
-
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>Cupping/Hijama Therapie</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
+                <hr>
+                <p>Tijdens het Cupping/Hijama therapie word het zelfgenezend vermogen van het lichaam wordt gestimuleerd, waardoor het lichaam efficiënter functioneert. </p>   
                 <a href="#s2/slide-1"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
 
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>Bloedzuiger Therapie</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
-                <a href="#s2/slide-1"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                <a href="#s2/slide-2"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
 
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>Oorkaars Therapie</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
-                <a href="#s2/slide-2"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                <a href="#s2/slide-3"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
 
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>PRP therapie</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
-                <a href="#s2/slide-2"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                <a href="#s2/slide-4"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
 
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>Vitamine Cocktail Therapie</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
-                <a href="#s2/slide-3"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                <a href="#s2/slide-5"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
 
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>Microneedling</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
-                <a href="#s2/slide-3"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                <a href="#s2/slide-6"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
 
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>Plasmalift</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
-                <a href="#s2/slide-4"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                <a href="#s2/slide-7"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
             
             <div class="slideone__box-one">
                 <ion-icon class="first__icon" name="accessibility-outline"></ion-icon>
                 <h2>Tanden bleken</h2>
+                <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit non tenetur recusandae saepe. Corporis fugit consequuntur unde nobis excepturi minus repudiandae temporibus repellat. Perspiciatis, quidem. Cumque, voluptate. Consequuntur, quis.</p>
-                <a href="#s2/slide-4"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                <a href="#s2/slide-8"> <button><ion-icon name="arrow-forward-outline"></ion-icon></button></a>
             </div>
 
         </div>
@@ -204,8 +242,9 @@
             <div class="slide-four__object">
                 <img src="./images/Location dummy1.jpg" alt="">
                 <div class="slide-four__textarea">
-                    <h2>Vitamine Cocktail Therapie</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus a modi non, hic sunt minus quam suscipit delectus labore, inventore aperiam natus alias, cupiditate sint ipsum nulla et. Quia beatae excepturi doloribus dolorum suscipit perspiciatis officiis, laborum veniam. Quo officia modi id fuga exercitationem, nobis pariatur placeat quis delectus?</p>
+                    <h2>Cupping/Hijama Therapie</h2>
+                    <p>Tijdens een Hijama behandeling worden er cups op de huid geplaatst, waarna deze vacuüm gezogen worden middels een pompje. Na een paar minuten worden de cups verwijderd en worden er kleine krasjes op de huid gemaakt. Vervolgens worden de cups teruggeplaatst en wordt er een beetje bloed uit het lichaam gezogen.</p>
+
                 </div>
                 
             </div>
@@ -292,17 +331,125 @@
 
         </div>
 
+        <div class="slide slide-four" data-anchor="slide-5">
+
+            <div class="slide-four__object">
+                <img src="./images/Location dummy1.jpg" alt="">
+                <div class="slide-four__textarea">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    <p>Tijdens een Hijama behandeling worden er cups op de huid geplaatst, waarna deze vacuüm gezogen worden middels een pompje. Na een paar minuten worden de cups verwijderd en worden er kleine krasjes op de huid gemaakt. Vervolgens worden de cups teruggeplaatst en wordt er een beetje bloed uit het lichaam gezogen.</p>
+
+                </div>
+                
+            </div>
+
+            <div class="slide-four__object_two">
+
+                <div class="slide-four__textarea">
+                    <h2>Microneedling</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus a modi non, hic sunt minus quam suscipit delectus labore, inventore aperiam natus alias, cupiditate sint ipsum nulla et. Quia beatae excepturi doloribus dolorum suscipit perspiciatis officiis, laborum veniam. Quo officia modi id fuga exercitationem, nobis pariatur placeat quis delectus?</p>
+                </div>
+                <img src="./images/Location dummy2.jpg" alt="">
+            </div>
+
+
+
+        </div>
+
+
+        <div class="slide slide-two" data-anchor="slide-6"> 
+
+            <div class="slide-two__object">
+            
+                <img src="./images/Location dummy1.jpg" alt="">
+                <div class="slide-two__text">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum commodi nisi exercitationem a amet expedita rerum incidunt excepturi! Ad, quod iusto quaerat delectus harum odit, odio ex assumenda beatae error ratione explicabo omnis ullam officiis tenetur aspernatur cumque repudiandae itaque maiores! Enim adipisci reprehenderit deserunt architecto expedita vitae exercitationem.</p>                
+                </div>    
+            </div>
+
+            <div class="slide-two__object_two">
+                <div class="slide-two__text">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum commodi nisi exercitationem a amet expedita rerum incidunt excepturi! Ad, quod iusto quaerat delectus harum odit, odio ex assumenda beatae error ratione explicabo omnis ullam officiis tenetur aspernatur cumque repudiandae itaque maiores! Enim adipisci reprehenderit deserunt architecto expedita vitae exercitationem.</p>                
+                </div>    
+                <img src="./images/Location dummy1.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="slide slide-four" data-anchor="slide-7">
+
+            <div class="slide-four__object">
+                <img src="./images/Location dummy1.jpg" alt="">
+                <div class="slide-four__textarea">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    <p>Tijdens een Hijama behandeling worden er cups op de huid geplaatst, waarna deze vacuüm gezogen worden middels een pompje. Na een paar minuten worden de cups verwijderd en worden er kleine krasjes op de huid gemaakt. Vervolgens worden de cups teruggeplaatst en wordt er een beetje bloed uit het lichaam gezogen.</p>
+
+                </div>
+                
+            </div>
+
+            <div class="slide-four__object_two">
+
+                <div class="slide-four__textarea">
+                    <h2>Microneedling</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia necessitatibus a modi non, hic sunt minus quam suscipit delectus labore, inventore aperiam natus alias, cupiditate sint ipsum nulla et. Quia beatae excepturi doloribus dolorum suscipit perspiciatis officiis, laborum veniam. Quo officia modi id fuga exercitationem, nobis pariatur placeat quis delectus?</p>
+                </div>
+                <img src="./images/Location dummy2.jpg" alt="">
+            </div>
+
+
+
+        </div>
+
+
+        <div class="slide slide-two" data-anchor="slide-8"> 
+
+            <div class="slide-two__object">
+            
+                <img src="./images/Location dummy1.jpg" alt="">
+                <div class="slide-two__text">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum commodi nisi exercitationem a amet expedita rerum incidunt excepturi! Ad, quod iusto quaerat delectus harum odit, odio ex assumenda beatae error ratione explicabo omnis ullam officiis tenetur aspernatur cumque repudiandae itaque maiores! Enim adipisci reprehenderit deserunt architecto expedita vitae exercitationem.</p>                
+                </div>    
+            </div>
+
+            <div class="slide-two__object_two">
+                <div class="slide-two__text">
+                    <h2>Cupping/Hijama Therapie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum commodi nisi exercitationem a amet expedita rerum incidunt excepturi! Ad, quod iusto quaerat delectus harum odit, odio ex assumenda beatae error ratione explicabo omnis ullam officiis tenetur aspernatur cumque repudiandae itaque maiores! Enim adipisci reprehenderit deserunt architecto expedita vitae exercitationem.</p>                
+                </div>    
+                <img src="./images/Location dummy1.jpg" alt="">
+            </div>
+
+        </div>
+
     </div>
     
     <div class="section s3">
 
         <div class="team__container">
-            <div class="team__card">
-                <img src="images/Team-Dummy.jpg" alt="">
-                <h4>Title</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus placeat exercitationem rerum officia animi unde. Aspernatur accusamus architecto, magnam beatae itaque voluptatibus veritatis numquam inventore officia repudiandae voluptate quibusdam!</p>
+            <div class="team__empty">
+                <img src="./images/Team-Dummy.jpg" alt="">
             </div>
 
+            <div class="flex-test">
+                <div class="team__card_one">
+                    <h3>Title</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, saepe! Asperiores fugiat aliquam hic molestiae voluptatibus corporis placeat natus, quia numquam, excepturi earum facilis. Repellat unde, quia saepe delectus, nisi omnis in dolor hic corrupti deleniti, fuga quis reprehenderit harum explicabo ut iure quaerat perferendis voluptatem? Consequatur non fugit aut commodi, sed illo possimus. Iste architecto ex ab ullam vel.</p>
+                </div>
+    
+                <div class="team__card_two">
+                    <h3>Title</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, saepe! Asperiores fugiat aliquam hic molestiae voluptatibus corporis placeat natus, quia numquam, excepturi earum facilis. Repellat unde, quia saepe delectus, nisi omnis in dolor hic corrupti deleniti, fuga quis reprehenderit harum explicabo ut iure quaerat perferendis voluptatem? Consequatur non fugit aut commodi, sed illo possimus. Iste architecto ex ab ullam vel.</p>
+    
+                </div>
+            </div>
 
         </div>
 
@@ -318,6 +465,7 @@
                 <div class="line"></div>
                 <div class="location__text">
                     <h3>Royal Kliniek Bornem</h3>
+                    <hr>
                     <p>2880 Bornem</p>
                     <p>Loremstraat 123</p>
                     <p>04123456789</p>
@@ -329,6 +477,7 @@
 
                 <div class="location__text">
                     <h3>Royal Kliniek Limburg</h3>
+                    <hr>
                     <p>2880 Bornem</p>
                     <p>Loremstraat 123</p>
                     <p>04123456789</p>
@@ -377,9 +526,10 @@
             <hr>
 
             <div class="footer-links">
-
+                
                 <div class="footer-links__two">
                     <h3>Title</h3>
+                    <hr>
                     <a href="#s1">Home</a>
                     <a href="#s2">Behandelingen</a>
                     <a href="#s3">Uw dokter</a>
@@ -388,6 +538,7 @@
 
                 <div class="footer-links__three">
                     <h3>Meer</h3>
+                    <hr>
                     <a href="#">Link 1</a>
                     <a href="#">Link 1</a>
                     <a href="#">Link 1</a>
@@ -396,6 +547,7 @@
 
                 <div class="footer-links__one">
                     <h3>Contact Info</h3>
+                    <hr>
                     <p>Email@Gmail.com</p>
                     <p>+324123456789</p>
                     <p>Bornem/Limburg</p>
@@ -403,7 +555,7 @@
                 </div>
 
                 <div class="footer-links__four">
-                    <div class="logo"></div>
+                    <div class="logo"><img src="./images/rsz_logo-02.png" alt=""></div>
                     <h1>Royal Kliniek</h1>
                 </div>
 
@@ -421,12 +573,12 @@
     <!-- : JS file -->
     <script src="./js/script.js"></script>
 
-    <!-- : Fullpage JS file -->
+    <!-- : Fullpage / JS file -->
     <script src="./fullpage.dropEffect.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.js"></script>
     <script type="text/javascript" src="./js/fullpage.js"></script>
 
-    <!-- css icons  -->
+    <!--  icons  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
