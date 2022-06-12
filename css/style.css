@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 * {
   margin: 0;
@@ -46,6 +47,7 @@ body {
 
 .navbar {
   z-index: 1000;
+  position: relative;
 }
 
 .navbar .toggle {
@@ -80,7 +82,7 @@ body {
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   height: 100%;
   z-index: 15;
   background-color: rgba(255, 255, 255, 0.9);
@@ -105,7 +107,7 @@ body {
 .navbar .navigation ul {
   text-decoration: none;
   list-style-type: none;
-  padding: 2.5rem;
+  padding: 2.7rem;
 }
 
 .navbar .navigation ul li {
@@ -135,8 +137,63 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: auto auto auto 2.2rem;
   gap: 1rem;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.navbar .navigation .navigation__socials .button__afspraak {
+  position: absolute;
+  bottom: 150%;
+  width: 150px;
+  height: 38px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: rgba(87, 202, 195, 0.7);
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border: 0.2px solid black;
+}
+
+.navbar .navigation .navigation__socials .button__afspraak:hover {
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
+}
+
+.navbar .navigation .navigation__socials .button__webshop {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  top: 150%;
+  height: 38px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: rgba(87, 202, 195, 0.7);
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border: 0.2px solid black;
+}
+
+.navbar .navigation .navigation__socials .button__webshop:hover {
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
+}
+
+.navbar .navigation .navigation__socials .button__webshop ion-icon {
+  font-size: 20px;
 }
 
 .navbar .navigation .navigation__socials .footer_socials {
@@ -307,9 +364,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
   border: 1px solid rgba(87, 202, 195, 0.3);
+}
+
+.s2 .slide-one .slideone__box-one a {
+  text-decoration: none;
 }
 
 .s2 .slide-one .slideone__box-one hr {
@@ -331,17 +392,34 @@ body {
 }
 
 .s2 .slide-one .slideone__box-one button {
-  width: 120px;
-  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 38px;
+  font-size: 15px;
   border-radius: 10px;
-  border: 1px solid white;
   background-color: rgba(87, 202, 195, 0.7);
   cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border: 0.2px solid black;
+  text-decoration: none;
+}
+
+.s2 .slide-one .slideone__box-one button:hover {
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
 }
 
 .s2 .slide-one .slideone__box-one ion-icon {
   font-size: 25px;
-  display: none;
 }
 
 .s2 .slide-two {
@@ -1097,6 +1175,7 @@ body {
     width: 100%;
     display: none;
     margin-top: auto;
+    z-index: 10000000à;
     margin-bottom: -7px;
     /*Fix for safari gap*/
     height: 40px;

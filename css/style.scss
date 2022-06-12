@@ -63,6 +63,7 @@ body {
 
 .navbar {
     z-index: 1000;
+    position: relative;
 
     .toggle {
         position: fixed;
@@ -95,7 +96,7 @@ body {
         top: 0;
         right: -100%;
         width: 100%;
-        max-width: 400px;
+        max-width: 380px;
         height: 100%;
         z-index: 15;
         background-color: rgba(255, 255, 255, 0.9);
@@ -105,10 +106,11 @@ body {
         align-items: flex-start;
         transition: 1.4s ease;
         gap: 3rem;
+
         ul {
             text-decoration: none;
             list-style-type: none;
-            padding: 2.5rem;
+            padding: 2.7rem;
 
             li {
                 line-height: 32px;
@@ -143,8 +145,53 @@ body {
 
         .navigation__socials {
             display: flex;
-            margin: auto;
+            margin: auto auto auto 2.2rem;
             gap: 1rem;
+            position: relative;
+            transition: all 1s ease;
+
+            .button__afspraak {
+                position: absolute;
+                bottom: 150%;
+                width: 150px;
+                height: 38px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 1px solid white;
+                background-color: rgba(87, 202, 195, 0.7);
+                cursor: pointer;
+                transition: all 1s ease;
+                border: 0.2px solid black;
+
+                &:hover {
+                    transform: translateX(12px);
+                }
+            }
+
+            .button__webshop {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                top: 150%;
+                height: 38px;
+                font-size: 15px;
+                border-radius: 10px;
+                background-color: rgba(87, 202, 195, 0.7);
+                cursor: pointer;
+                transition: all 1s ease;
+                border: 0.2px solid black;
+
+                &:hover {
+                    transform: translateX(12px);
+                }
+
+                ion-icon {
+                    font-size: 20px;
+                }
+            }
+
             .footer_socials {
                 display: flex;
                 gap: 1rem;
@@ -433,8 +480,12 @@ body {
             align-items: center;
             flex-direction: column;
             margin: auto;
-            transition: all 1s ease-in;
+            transition: all 1s ease;
             border: 1px solid rgba(87, 202, 195, 0.3);
+
+            a {
+                text-decoration: none;
+            }
 
             hr {
                 text-align: left;
@@ -457,14 +508,22 @@ body {
             }
 
             button {
-                width: 120px;
-                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 38px;
+                font-size: 15px;
                 border-radius: 10px;
-                border: 1px solid white;
                 background-color: rgba(87, 202, 195, 0.7);
                 cursor: pointer;
-                // animation: RKbutton 2s linear infinite;
-                // animation-play-state: paused;
+                transition: all 1s ease;
+                border: 0.2px solid black;
+                text-decoration: none;
+
+                &:hover {
+                    transform: translateX(12px);
+                }
             }
             // @keyframes RKbutton {
             //     0% {
@@ -507,7 +566,6 @@ body {
 
             ion-icon {
                 font-size: 25px;
-                display: none;
             }
 
             // @keyframes pillars {
@@ -1107,6 +1165,7 @@ body {
                 width: 100%;
                 display: none;
                 margin-top: auto;
+                z-index: 10000000à;
                 margin-bottom: -7px; /*Fix for safari gap*/
                 height: 40px;
                 min-height: 40px;
