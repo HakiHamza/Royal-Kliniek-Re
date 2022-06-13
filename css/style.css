@@ -148,6 +148,7 @@ body {
   position: absolute;
   bottom: 150%;
   width: 150px;
+  left: 10%;
   height: 38px;
   font-size: 15px;
   border-radius: 10px;
@@ -177,6 +178,7 @@ body {
           justify-content: center;
   width: 150px;
   top: 150%;
+  left: 10%;
   height: 38px;
   font-size: 15px;
   border-radius: 10px;
@@ -200,7 +202,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 1.3rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -226,7 +228,7 @@ body {
 }
 
 .s1 {
-  background-image: url("../images/rk header.jpg");
+  background-image: url("../images/rk header quality.jpg");
   background-size: cover;
   /* Animation */
 }
