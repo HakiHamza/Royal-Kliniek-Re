@@ -6,4 +6,5 @@ new fullpage("#fullpage", {
   scrollingSpeed: 1000,
   slidesNavigation: true,
   controlArrows: false,
+  responsiveWidth: 900,
 });
