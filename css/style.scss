@@ -45,6 +45,28 @@ body {
     }
 }
 
+button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(87, 202, 195, 0.6);
+    justify-content: center;
+    border: none;
+    width: 150px;
+    height: 36px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &:hover {
+        transform: scale(1.08);
+        background-color: white;
+        color: $main-color;
+    }
+}
+
 #my-nav {
     position: fixed;
     right: 0;
@@ -96,7 +118,7 @@ body {
         top: 0;
         right: -100%;
         width: 100%;
-        max-width: 380px;
+        max-width: 350px;
         height: 100%;
         z-index: 15;
         background-color: rgba(255, 255, 255, 0.9);
@@ -133,12 +155,13 @@ body {
             h2 {
                 line-height: 32px;
                 font-size: 30px;
-                font-weight: 500;
+                font-weight: 700;
                 border-bottom: 2px solid $main-color;
                 color: $main-color;
                 transition: all 1s ease;
                 &:hover {
                     transform: translateX(12px);
+                    color: red;
                 }
             }
         }
@@ -156,16 +179,15 @@ body {
                 width: 150px;
                 left: 10%;
                 height: 38px;
-                font-size: 15px;
-                border-radius: 10px;
-                border: 1px solid white;
+                font-size: 14px;
                 background-color: rgba(87, 202, 195, 0.7);
                 cursor: pointer;
-                transition: all 1s ease;
-                border: 0.2px solid black;
-
+                transition: all 0.5s ease;
+                border: none;
                 &:hover {
-                    transform: translateX(12px);
+                    transform: scale(1.08);
+                    background-color: white;
+                    color: $main-color;
                 }
             }
 
@@ -178,15 +200,15 @@ body {
                 top: 150%;
                 left: 10%;
                 height: 38px;
-                font-size: 15px;
-                border-radius: 10px;
+                font-size: 14px;
                 background-color: rgba(87, 202, 195, 0.7);
                 cursor: pointer;
-                transition: all 1s ease;
-                border: 0.2px solid black;
-
+                transition: all 0.5s ease;
+                border: none;
                 &:hover {
-                    transform: translateX(12px);
+                    transform: scale(1.08);
+                    background-color: white;
+                    color: $main-color;
                 }
 
                 ion-icon {
@@ -196,20 +218,127 @@ body {
 
             .footer_socials {
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 gap: 1.3rem;
-                flex-wrap: wrap;
-                ion-icon {
-                    font-size: 32px;
-                    color: $main-color;
-                    border-radius: 25%;
-                    padding: 0.7rem;
-                    border: 0.7px solid rgb(87, 202, 195);
-                    background-color: white;
-                    transition: all 1s ease;
 
-                    &:hover {
-                        transform: scale(1.1);
+                .insta {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    transition: all 0.5s ease;
+
+                    &:nth-child(1) {
+                        font-size: 35px;
+                        color: white;
+                        border-radius: 3px;
+                        border: 0.7px solid rgb(87, 202, 195);
+                        background-color: rgba(87, 202, 195, 0.8);
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            transform: scale(1.1);
+                            color: #e1306c;
+                            background-color: white;
+                        }
                     }
+                }
+
+                .facebook {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    transition: all 0.5s ease;
+                    &:nth-child(2) {
+                        font-size: 35px;
+                        color: white;
+                        border-radius: 3px;
+                        border: 0.7px solid rgb(87, 202, 195);
+                        background-color: rgba(87, 202, 195, 0.8);
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            transform: scale(1.1);
+                            background-color: white;
+                            color: #4267b2;
+                        }
+                    }
+                }
+
+                .whatsapp {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    transition: all 0.5s ease;
+                    &:nth-child(3) {
+                        font-size: 35px;
+                        color: white;
+                        border-radius: 3px;
+                        border: 0.7px solid rgb(87, 202, 195);
+                        background-color: rgba(87, 202, 195, 0.8);
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            transform: scale(1.1);
+                            color: #25d366;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navigation__behandelingen {
+            text-decoration: none;
+            list-style-type: none;
+            padding: 2.7rem;
+
+            li {
+                line-height: 32px;
+
+                a {
+                    text-decoration: none;
+                }
+                // h2 {
+                //     font-size: 30px;
+                //     border-bottom: 2px solid $main-color;
+                //     color: $main-color;
+                //     text-decoration: none;
+
+                //     &:hover {
+                //         transform: translateX(7px);
+                //     }
+                // }
+            }
+
+            h1 {
+                line-height: 26px;
+                font-size: 30px;
+                font-weight: 700;
+                color: $main-color;
+                transition: all 1s ease;
+            }
+
+            h2 {
+                line-height: 26px;
+                font-size: 18px;
+                font-weight: 500;
+                border-bottom: 2px solid $main-color;
+                width: 140px;
+                color: $main-color;
+                transition: all 1s ease;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    transform: translateX(12px);
+                    color: red;
                 }
             }
         }
@@ -217,6 +346,49 @@ body {
 
     .navigation.active {
         right: 0;
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    right: 0.6%;
+    bottom: 1.5%;
+    z-index: 1000;
+
+    @keyframes whatsapp-button {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.03);
+        }
+
+        100%,
+        0% {
+            transform: scale(1.08);
+        }
+    }
+    a {
+        button {
+            width: 65px;
+            height: 65px;
+            border: none;
+            background-color: rgb(37, 211, 102);
+            border-radius: 50%;
+            margin: auto;
+            cursor: pointer;
+            transition: all 1s ease;
+            animation: whatsapp-button 2s infinite;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+            ion-icon {
+                color: white;
+                font-size: 45px;
+                margin: auto;
+            }
+        }
     }
 }
 
@@ -509,24 +681,6 @@ body {
                 padding: 0.5rem 2rem;
             }
 
-            button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 150px;
-                height: 38px;
-                font-size: 15px;
-                border-radius: 10px;
-                background-color: rgba(87, 202, 195, 0.7);
-                cursor: pointer;
-                transition: all 1s ease;
-                border: 0.2px solid black;
-                text-decoration: none;
-
-                &:hover {
-                    transform: translateX(12px);
-                }
-            }
             // @keyframes RKbutton {
             //     0% {
             //         transform: translateZ(0px);
@@ -755,6 +909,7 @@ body {
                 text-align: left;
                 background-color: rgba(0, 0, 0, 0.4);
                 box-shadow: rgba(87, 202, 195, 0.3) -30px -30px;
+                padding: 1rem;
 
                 hr {
                     text-align: left;
@@ -788,6 +943,7 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
+                padding: 1rem;
                 background-color: rgba(0, 0, 0, 0.4);
                 box-shadow: rgba(87, 202, 195, 0.3) -30px 30px;
 
@@ -796,17 +952,15 @@ body {
                     border: 0;
                     border-bottom: 0.5px solid $main-color;
                     width: 130px;
-                    margin: 0 0 0 1rem;
                 }
 
                 h3 {
                     color: $main-color;
                     font-size: 24px;
-                    padding-left: 1rem;
                 }
 
                 p {
-                    padding: 1rem;
+                    padding: 1rem 0;
                     color: white;
                 }
 
@@ -869,6 +1023,9 @@ body {
                     font-size: 25px;
                     padding: 4px 0;
                 }
+                button {
+                    margin: 0.2rem 0.2rem 0.2rem 0;
+                }
             }
 
             img {
@@ -911,6 +1068,10 @@ body {
                     color: $main-color;
                     font-size: 25px;
                     padding: 4px 0;
+                }
+
+                button {
+                    margin: 0.2rem 0.2rem 0.2rem 0;
                 }
             }
 
@@ -970,26 +1131,78 @@ body {
                     background-color: rgba(255, 255, 255, 0.7);
                 }
 
-                button {
-                    width: 120px;
-                    height: 35px;
-                    border-radius: 10px;
-                    border: 1px solid white;
-                    background-color: rgba(87, 202, 195, 0.7);
-                    cursor: pointer;
-                }
-
                 .footer_socials {
                     display: flex;
                     gap: 2rem;
 
-                    ion-icon {
-                        font-size: 32px;
-                        color: $main-color;
-                        border-radius: 25%;
-                        padding: 0.5rem;
-                        border: 0.7px solid rgb(87, 202, 195);
-                        background-color: white;
+                    .insta {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+                        transition: all 1s ease;
+
+                        &:nth-child(1) {
+                            font-size: 35px;
+                            color: white;
+                            border-radius: 3px;
+                            border: 0.7px solid rgb(87, 202, 195);
+                            background-color: rgba(87, 202, 195, 0.8);
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: scale(1.1);
+                                color: #e1306c;
+                                background-color: white;
+                            }
+                        }
+                    }
+
+                    .facebook {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+                        transition: all 1s ease;
+                        &:nth-child(2) {
+                            font-size: 35px;
+                            color: white;
+                            border-radius: 3px;
+                            border: 0.7px solid rgb(87, 202, 195);
+                            background-color: rgba(87, 202, 195, 0.8);
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: scale(1.1);
+                                background-color: white;
+                                color: #4267b2;
+                            }
+                        }
+                    }
+
+                    .whatsapp {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+                        transition: all 1s ease;
+                        &:nth-child(3) {
+                            font-size: 35px;
+                            color: white;
+                            border-radius: 3px;
+                            border: 0.7px solid rgb(87, 202, 195);
+                            background-color: rgba(87, 202, 195, 0.8);
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: scale(1.1);
+                                color: #25d366;
+                                background-color: white;
+                            }
+                        }
                     }
                 }
             }

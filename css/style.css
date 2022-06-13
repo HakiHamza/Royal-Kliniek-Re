@@ -29,6 +29,37 @@ body {
   color: black;
 }
 
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(87, 202, 195, 0.6);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  width: 150px;
+  height: 36px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: white;
+  color: #57cac3;
+}
+
 #my-nav {
   position: fixed;
   right: 0;
@@ -82,7 +113,7 @@ body {
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 380px;
+  max-width: 350px;
   height: 100%;
   z-index: 15;
   background-color: rgba(255, 255, 255, 0.9);
@@ -121,7 +152,7 @@ body {
 .navbar .navigation ul h2 {
   line-height: 32px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   border-bottom: 2px solid #57cac3;
   color: #57cac3;
   -webkit-transition: all 1s ease;
@@ -131,6 +162,7 @@ body {
 .navbar .navigation ul h2:hover {
   -webkit-transform: translateX(12px);
           transform: translateX(12px);
+  color: red;
 }
 
 .navbar .navigation .navigation__socials {
@@ -150,19 +182,19 @@ body {
   width: 150px;
   left: 10%;
   height: 38px;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 1px solid white;
+  font-size: 14px;
   background-color: rgba(87, 202, 195, 0.7);
   cursor: pointer;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  border: 0.2px solid black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
 }
 
 .navbar .navigation .navigation__socials .button__afspraak:hover {
-  -webkit-transform: translateX(12px);
-          transform: translateX(12px);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: white;
+  color: #57cac3;
 }
 
 .navbar .navigation .navigation__socials .button__webshop {
@@ -180,18 +212,19 @@ body {
   top: 150%;
   left: 10%;
   height: 38px;
-  font-size: 15px;
-  border-radius: 10px;
+  font-size: 14px;
   background-color: rgba(87, 202, 195, 0.7);
   cursor: pointer;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  border: 0.2px solid black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
 }
 
 .navbar .navigation .navigation__socials .button__webshop:hover {
-  -webkit-transform: translateX(12px);
-          transform: translateX(12px);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: white;
+  color: #57cac3;
 }
 
 .navbar .navigation .navigation__socials .button__webshop ion-icon {
@@ -202,29 +235,226 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.3rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.navbar .navigation .navigation__socials .footer_socials ion-icon {
-  font-size: 32px;
-  color: #57cac3;
-  border-radius: 25%;
-  padding: 0.7rem;
+.navbar .navigation .navigation__socials .footer_socials .insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .insta:nth-child(1) {
+  font-size: 35px;
+  color: white;
+  border-radius: 3px;
   border: 0.7px solid #57cac3;
+  background-color: rgba(87, 202, 195, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .insta:nth-child(1):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #e1306c;
   background-color: white;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .facebook:nth-child(2) {
+  font-size: 35px;
+  color: white;
+  border-radius: 3px;
+  border: 0.7px solid #57cac3;
+  background-color: rgba(87, 202, 195, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .facebook:nth-child(2):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: white;
+  color: #4267b2;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .whatsapp:nth-child(3) {
+  font-size: 35px;
+  color: white;
+  border-radius: 3px;
+  border: 0.7px solid #57cac3;
+  background-color: rgba(87, 202, 195, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar .navigation .navigation__socials .footer_socials .whatsapp:nth-child(3):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #25d366;
+  background-color: white;
+}
+
+.navbar .navigation .navigation__behandelingen {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 2.7rem;
+}
+
+.navbar .navigation .navigation__behandelingen li {
+  line-height: 32px;
+}
+
+.navbar .navigation .navigation__behandelingen li a {
+  text-decoration: none;
+}
+
+.navbar .navigation .navigation__behandelingen h1 {
+  line-height: 26px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #57cac3;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
-.navbar .navigation .navigation__socials .footer_socials ion-icon:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.navbar .navigation .navigation__behandelingen h2 {
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid #57cac3;
+  width: 140px;
+  color: #57cac3;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navigation .navigation__behandelingen h2:hover {
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
+  color: red;
 }
 
 .navbar .navigation.active {
   right: 0;
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 0.6%;
+  bottom: 1.5%;
+  z-index: 1000;
+}
+
+@-webkit-keyframes whatsapp-button {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100%,
+  0% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+}
+
+@keyframes whatsapp-button {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100%,
+  0% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+}
+
+.whatsapp-button a button {
+  width: 65px;
+  height: 65px;
+  border: none;
+  background-color: #25d366;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation: whatsapp-button 2s infinite;
+          animation: whatsapp-button 2s infinite;
+}
+
+.whatsapp-button a button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.whatsapp-button a button ion-icon {
+  color: white;
+  font-size: 45px;
+  margin: auto;
 }
 
 .s1 {
@@ -391,33 +621,6 @@ body {
   font-size: 14px;
   text-align: center;
   padding: 0.5rem 2rem;
-}
-
-.s2 .slide-one .slideone__box-one button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 150px;
-  height: 38px;
-  font-size: 15px;
-  border-radius: 10px;
-  background-color: rgba(87, 202, 195, 0.7);
-  cursor: pointer;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  border: 0.2px solid black;
-  text-decoration: none;
-}
-
-.s2 .slide-one .slideone__box-one button:hover {
-  -webkit-transform: translateX(12px);
-          transform: translateX(12px);
 }
 
 .s2 .slide-one .slideone__box-one ion-icon {
@@ -661,6 +864,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: rgba(87, 202, 195, 0.3) -30px -30px;
           box-shadow: rgba(87, 202, 195, 0.3) -30px -30px;
+  padding: 1rem;
 }
 
 .s3 .team__container .flex-test .team__card_one hr {
@@ -705,6 +909,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 1rem;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: rgba(87, 202, 195, 0.3) -30px 30px;
           box-shadow: rgba(87, 202, 195, 0.3) -30px 30px;
@@ -715,17 +920,15 @@ body {
   border: 0;
   border-bottom: 0.5px solid #57cac3;
   width: 130px;
-  margin: 0 0 0 1rem;
 }
 
 .s3 .team__container .flex-test .team__card_two h3 {
   color: #57cac3;
   font-size: 24px;
-  padding-left: 1rem;
 }
 
 .s3 .team__container .flex-test .team__card_two p {
-  padding: 1rem;
+  padding: 1rem 0;
   color: white;
 }
 
@@ -799,6 +1002,10 @@ body {
   padding: 4px 0;
 }
 
+.s4 .locations .location__one .location__text button {
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
+
 .s4 .locations .location__one img {
   width: 100%;
   max-width: 380px;
@@ -850,6 +1057,10 @@ body {
   color: #57cac3;
   font-size: 25px;
   padding: 4px 0;
+}
+
+.s4 .locations .location__two .location__text button {
+  margin: 0.2rem 0.2rem 0.2rem 0;
 }
 
 .s4 .locations .location__two img {
@@ -917,15 +1128,6 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.s5 .footer_one .footer-contact form button {
-  width: 120px;
-  height: 35px;
-  border-radius: 10px;
-  border: 1px solid white;
-  background-color: rgba(87, 202, 195, 0.7);
-  cursor: pointer;
-}
-
 .s5 .footer_one .footer-contact form .footer_socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -933,12 +1135,102 @@ body {
   gap: 2rem;
 }
 
-.s5 .footer_one .footer-contact form .footer_socials ion-icon {
-  font-size: 32px;
-  color: #57cac3;
-  border-radius: 25%;
-  padding: 0.5rem;
+.s5 .footer_one .footer-contact form .footer_socials .insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .insta:nth-child(1) {
+  font-size: 35px;
+  color: white;
+  border-radius: 3px;
   border: 0.7px solid #57cac3;
+  background-color: rgba(87, 202, 195, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .insta:nth-child(1):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #e1306c;
+  background-color: white;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .facebook:nth-child(2) {
+  font-size: 35px;
+  color: white;
+  border-radius: 3px;
+  border: 0.7px solid #57cac3;
+  background-color: rgba(87, 202, 195, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .facebook:nth-child(2):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: white;
+  color: #4267b2;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .whatsapp:nth-child(3) {
+  font-size: 35px;
+  color: white;
+  border-radius: 3px;
+  border: 0.7px solid #57cac3;
+  background-color: rgba(87, 202, 195, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.s5 .footer_one .footer-contact form .footer_socials .whatsapp:nth-child(3):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #25d366;
   background-color: white;
 }
 
