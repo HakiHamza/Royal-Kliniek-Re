@@ -91,12 +91,18 @@ button {
         position: fixed;
         top: 5%;
         right: 2%;
-        width: 30px;
+        width: 100%;
+        max-width: 30px;
         height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: url("../images/menu-icon.png");
+
         background-size: 25px;
         background-position: center;
         background-repeat: no-repeat;
+
         background-color: rgba(87, 202, 195, 0.6);
         z-index: 20;
         cursor: pointer;
@@ -104,6 +110,8 @@ button {
         padding: 1.5rem;
         border: 2px solid white;
     }
+
+    // max-width: 30px;
 
     .toggle.active {
         background: url("../images/close-icon.png");
@@ -343,7 +351,6 @@ button {
             }
         }
     }
-
     .navigation.active {
         right: 0;
     }

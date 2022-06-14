@@ -16,13 +16,37 @@
 // TOGLE MENU
 
 const toggle = document.querySelector(".toggle");
-const navigation = document.querySelector(".navigation");
+const navBar = document.querySelector(".navigation");
 
 toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
-  navigation.classList.toggle("active");
+  navBar.classList.toggle("active");
 });
 
+// const menuBtn = document.getElementsByClassName("toggle");
+// const mainNav = document.getElementsByClassName("navigation");
+// const menu = document.getElementById("menu");
+
+// menuBtn.onclick = function (el) {
+//   el.stopPropagation();
+
+//   if (!navBar.classList.contains("active")) {
+//     mainNav.classList.add("active");
+//     menu.src = "./images/close-icon.png";
+//   } else {
+//     mainNav.classList.remove("active");
+//     menu.src = "./images/menu-icon.png";
+//   }
+// };
+
+// mainNav.onclick = function (el) {
+//   el.stopPropagation();
+// };
+
+// document.onclick = function () {
+//   mainNav.classList.remove("active");
+//   menu.src = "./images/menu-icon.png";
+// };
 // SMALL CONTACT VISIBILITY
 
 // function smallContact() {
