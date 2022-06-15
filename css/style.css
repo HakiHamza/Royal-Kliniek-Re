@@ -12,6 +12,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.fp-slidesNav.fp-bottom {
+  text-align: center;
+}
+
 .fp-controlArrow.fp-prev {
   top: 50.5% !important;
   left: 2%;
@@ -1549,6 +1553,116 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .fp-controlArrow.fp-prev {
+    top: 50.5% !important;
+    left: 2%;
+    width: 50px !important;
+    height: 50px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    background: #57cac3 url("../images/mobile-prev.png") no-repeat;
+    -webkit-animation: previous-button 2s infinite;
+            animation: previous-button 2s infinite;
+  }
+  .fp-controlArrow.fp-prev:hover {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    background: rgba(255, 255, 255, 0.8) url("../images/mobile-previous.png");
+  }
+  @-webkit-keyframes previous-button {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    50% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+    100%,
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes previous-button {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    50% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+    100%,
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  .fp-controlArrow.fp-next {
+    top: 50.5% !important;
+    right: 2%;
+    width: 50px !important;
+    height: 50px !important;
+    background: #57cac3 url("../images/mobile-next.png") no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-animation: forward-button 2s infinite;
+            animation: forward-button 2s infinite;
+  }
+  .fp-controlArrow.fp-next:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.8) url("../images/mobilenext-color.png");
+  }
+  @-webkit-keyframes forward-button {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    50% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    100%,
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes forward-button {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    50% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    100%,
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
   .navbar {
     z-index: 1000;
   }
@@ -2068,7 +2182,7 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     line-height: 1.5rem;
   }
   .s4 .locations .location__two .line {

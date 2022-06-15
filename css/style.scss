@@ -13,6 +13,9 @@ body {
     margin: 0;
     font-family: "Source Sans Pro", sans-serif;
 }
+.fp-slidesNav.fp-bottom {
+    text-align: center;
+}
 
 .fp-controlArrow.fp-prev {
     top: 50.5% !important;
@@ -1400,6 +1403,70 @@ button {
 @media screen and (max-width: 600px) {
     // NAVIGATION BAR
 
+    .fp-controlArrow.fp-prev {
+        top: 50.5% !important;
+        left: 2%;
+        width: 50px !important;
+        height: 50px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease;
+        background: $main-color url("../images/mobile-prev.png") no-repeat;
+        animation: previous-button 2s infinite;
+
+        &:hover {
+            transform: translateX(-10px);
+            background: rgba(255, 255, 255, 0.8) url("../images/mobile-previous.png");
+        }
+
+        @keyframes previous-button {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(-8px);
+            }
+
+            100%,
+            0% {
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    .fp-controlArrow.fp-next {
+        top: 50.5% !important;
+        right: 2%;
+        width: 50px !important;
+        height: 50px !important;
+        background: $main-color url("../images/mobile-next.png") no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease;
+        animation: forward-button 2s infinite;
+
+        &:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.8) url("../images/mobilenext-color.png");
+        }
+
+        @keyframes forward-button {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(8px);
+            }
+
+            100%,
+            0% {
+                transform: translateX(0px);
+            }
+        }
+    }
+
     .navbar {
         z-index: 1000;
 
@@ -1844,7 +1911,7 @@ button {
                 justify-content: space-evenly;
                 flex-direction: column;
                 align-items: center;
-                gap: 2rem;
+                gap: 1rem;
                 line-height: 1.5rem;
                 .line {
                     position: absolute;
