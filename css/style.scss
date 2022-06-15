@@ -14,6 +14,70 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+.fp-controlArrow.fp-prev {
+    top: 50.5% !important;
+    left: 2%;
+    width: 70px !important;
+    height: 70px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    background: $main-color url("../images/previous.png") no-repeat;
+    animation: previous-button 2s infinite;
+
+    &:hover {
+        transform: translateX(-10px);
+        background: rgba(0, 0, 0, 0) url("../images/picture-previous-color.png");
+    }
+
+    @keyframes previous-button {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(-8px);
+        }
+
+        100%,
+        0% {
+            transform: translateX(0px);
+        }
+    }
+}
+
+.fp-controlArrow.fp-next {
+    top: 50.5% !important;
+    right: 2%;
+    width: 70px !important;
+    height: 70px !important;
+    background: $main-color url("../images/forward.png") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    animation: forward-button 2s infinite;
+
+    &:hover {
+        transform: scale(1.1);
+        background: rgba(0, 0, 0, 0) url("../images/picture-forward-color.png");
+    }
+
+    @keyframes forward-button {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(8px);
+        }
+
+        100%,
+        0% {
+            transform: translateX(0px);
+        }
+    }
+}
+
 .fp-watermark {
     display: none !important;
 }
@@ -376,6 +440,18 @@ button {
         }
     }
     a {
+        position: relative;
+        .whatsapp-dot {
+            position: absolute;
+            right: 8%;
+            width: 12px;
+            height: 12px;
+            z-index: 10000;
+            border: 2px solid red;
+            background-color: red;
+            border-radius: 50%;
+            animation: whatsapp-button 2s infinite;
+        }
         button {
             width: 65px;
             height: 65px;
@@ -1429,17 +1505,18 @@ button {
         .slide-one {
             display: grid;
             height: 100vh;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
             // background-image: url(../images/Background-dummy.jpg);
             background-color: rgba(87, 202, 195, 0.3);
             box-shadow: inset 0 0 0 1000px rgb(248, 248, 255);
+
             .slideone__box-one {
                 border: 1px solid white;
                 width: 100%;
                 grid: 100%;
                 max-width: 100%;
-                max-height: 100%;
+                max-height: 350px;
                 height: 100%;
                 position: relative;
                 display: flex;
@@ -1452,14 +1529,14 @@ button {
                 border: 1px solid rgba(87, 202, 195, 0.3);
 
                 h2 {
-                    margin: auto;
+                    // margin: auto;
                 }
                 button {
                     margin: 0.2rem;
                 }
 
                 p {
-                    display: none;
+                    // display: ;
                 }
             }
         }
