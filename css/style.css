@@ -1821,6 +1821,9 @@ button:hover {
     transition: all 1s ease-in;
     border: 1px solid rgba(87, 202, 195, 0.3);
   }
+  .s2 .slide-one .slideone__box-one:last-child p {
+    display: none;
+  }
   .s2 .slide-one .slideone__box-one button {
     margin: 0.2rem;
   }
@@ -2461,6 +2464,79 @@ button:hover {
   .s5 .footer_one .footer-links .footer-second-two .footer-links__four .logo img {
     width: 100%;
     max-width: 150px;
+  }
+  .whatsapp-button {
+    position: fixed;
+    right: 0.6%;
+    bottom: 1.5%;
+    z-index: 1000;
+  }
+  @-webkit-keyframes whatsapp-button {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.03);
+              transform: scale(1.03);
+    }
+    100%,
+    0% {
+      -webkit-transform: scale(1.08);
+              transform: scale(1.08);
+    }
+  }
+  @keyframes whatsapp-button {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.03);
+              transform: scale(1.03);
+    }
+    100%,
+    0% {
+      -webkit-transform: scale(1.08);
+              transform: scale(1.08);
+    }
+  }
+  .whatsapp-button a {
+    position: relative;
+  }
+  .whatsapp-button a .whatsapp-dot {
+    position: absolute;
+    right: 8%;
+    width: 12px;
+    height: 12px;
+    z-index: 10000;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 50%;
+    -webkit-animation: whatsapp-button 2s infinite;
+            animation: whatsapp-button 2s infinite;
+  }
+  .whatsapp-button a button {
+    width: 65px;
+    height: 65px;
+    border: none;
+    background-color: #25d366;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-animation: whatsapp-button 2s infinite;
+            animation: whatsapp-button 2s infinite;
+  }
+  .whatsapp-button a button:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .whatsapp-button a button ion-icon {
+    color: white;
+    font-size: 45px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
