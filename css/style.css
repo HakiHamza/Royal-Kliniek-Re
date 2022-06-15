@@ -1554,7 +1554,7 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   .fp-controlArrow.fp-prev {
-    top: 50.5% !important;
+    top: 58.5% !important;
     left: 2%;
     width: 50px !important;
     height: 50px !important;
@@ -1584,8 +1584,8 @@ button:hover {
               transform: translateX(0px);
     }
     50% {
-      -webkit-transform: translateX(-8px);
-              transform: translateX(-8px);
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
     }
     100%,
     0% {
@@ -1599,8 +1599,8 @@ button:hover {
               transform: translateX(0px);
     }
     50% {
-      -webkit-transform: translateX(-8px);
-              transform: translateX(-8px);
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
     }
     100%,
     0% {
@@ -1609,7 +1609,7 @@ button:hover {
     }
   }
   .fp-controlArrow.fp-next {
-    top: 50.5% !important;
+    top: 58.5% !important;
     right: 2%;
     width: 50px !important;
     height: 50px !important;
@@ -1639,8 +1639,8 @@ button:hover {
               transform: translateX(0px);
     }
     50% {
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
     }
     100%,
     0% {
@@ -1654,8 +1654,8 @@ button:hover {
               transform: translateX(0px);
     }
     50% {
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
     }
     100%,
     0% {
@@ -1832,9 +1832,9 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1847,6 +1847,7 @@ button:hover {
     z-index: 10000;
   }
   .s2 .slide-two .slide-two__object .slide-two__text {
+    text-align: center;
     padding: 1rem;
     z-index: 10000;
     width: 100%;
@@ -1886,7 +1887,11 @@ button:hover {
             align-items: center;
     z-index: 10000;
   }
+  .s2 .slide-two .slide-two__object_two button {
+    margin: auto;
+  }
   .s2 .slide-two .slide-two__object_two .slide-two__text {
+    text-align: center;
     padding: 1rem;
     z-index: 10000;
     width: 100%;
@@ -1940,6 +1945,7 @@ button:hover {
     z-index: 10000;
   }
   .s2 .slide-four .slide-four__object .slide-four__textarea {
+    text-align: center;
     padding: 0.5rem 1rem 0.2rem 1.5rem;
     z-index: 10000;
     width: 100%;
@@ -1966,6 +1972,9 @@ button:hover {
             align-items: center;
     z-index: 10000;
   }
+  .s2 .slide-four .slide-four__object_two button {
+    margin: auto;
+  }
   .s2 .slide-four .slide-four__object_two img {
     width: 100%;
     max-width: 250px;
@@ -1975,6 +1984,7 @@ button:hover {
     display: none;
   }
   .s2 .slide-four .slide-four__object_two .slide-four__textarea {
+    text-align: center;
     padding: 0.5rem 1rem 0.2rem 1.5rem;
     z-index: 10000;
     width: 100%;

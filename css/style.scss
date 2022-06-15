@@ -1404,7 +1404,7 @@ button {
     // NAVIGATION BAR
 
     .fp-controlArrow.fp-prev {
-        top: 50.5% !important;
+        top: 58.5% !important;
         left: 2%;
         width: 50px !important;
         height: 50px !important;
@@ -1425,7 +1425,7 @@ button {
                 transform: translateX(0px);
             }
             50% {
-                transform: translateX(-8px);
+                transform: translateX(-5px);
             }
 
             100%,
@@ -1436,7 +1436,7 @@ button {
     }
 
     .fp-controlArrow.fp-next {
-        top: 50.5% !important;
+        top: 58.5% !important;
         right: 2%;
         width: 50px !important;
         height: 50px !important;
@@ -1457,7 +1457,7 @@ button {
                 transform: translateX(0px);
             }
             50% {
-                transform: translateX(8px);
+                transform: translateX(5px);
             }
 
             100%,
@@ -1614,7 +1614,7 @@ button {
 
             .slide-two__object {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 flex-direction: column;
                 padding: 1rem;
                 gap: 1rem;
@@ -1622,6 +1622,7 @@ button {
                 z-index: 10000;
 
                 .slide-two__text {
+                    text-align: center;
                     padding: 1rem;
                     z-index: 10000;
                     width: 100%;
@@ -1656,7 +1657,13 @@ button {
                 align-items: center;
                 z-index: 10000;
 
+                button {
+                    margin: auto;
+                }
+
                 .slide-two__text {
+                    text-align: center;
+
                     padding: 1rem;
                     z-index: 10000;
                     width: 100%;
@@ -1705,6 +1712,8 @@ button {
                 }
 
                 .slide-four__textarea {
+                    text-align: center;
+
                     padding: 0.5rem 1rem 0.2rem 1.5rem;
                     z-index: 10000;
                     width: 100%;
@@ -1726,6 +1735,10 @@ button {
                 align-items: center;
                 z-index: 10000;
 
+                button {
+                    margin: auto;
+                }
+
                 img {
                     width: 100%;
                     max-width: 250px;
@@ -1735,6 +1748,7 @@ button {
                 }
 
                 .slide-four__textarea {
+                    text-align: center;
                     padding: 0.5rem 1rem 0.2rem 1.5rem;
                     z-index: 10000;
                     width: 100%;
