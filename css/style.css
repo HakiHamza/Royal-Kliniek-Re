@@ -32,7 +32,7 @@ body {
           align-items: center;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  background: #57cac3 url("../images/previous.png") no-repeat;
+  background: rgba(87, 202, 195, 0.8) url("../images/previous.png") no-repeat;
   -webkit-animation: previous-button 2s infinite;
           animation: previous-button 2s infinite;
 }
@@ -80,7 +80,7 @@ body {
   right: 2%;
   width: 70px !important;
   height: 70px !important;
-  background: #57cac3 url("../images/forward.png") no-repeat;
+  background: rgba(87, 202, 195, 0.8) url("../images/forward.png") no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1569,7 +1569,7 @@ button:hover {
             align-items: center;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-    background: #57cac3 url("../images/mobile-prev.png") no-repeat;
+    background: rgba(87, 202, 195, 0.8) url("../images/mobile-prev.png") no-repeat;
     -webkit-animation: previous-button 2s infinite;
             animation: previous-button 2s infinite;
   }
@@ -1613,7 +1613,7 @@ button:hover {
     right: 2%;
     width: 50px !important;
     height: 50px !important;
-    background: #57cac3 url("../images/mobile-next.png") no-repeat;
+    background: rgba(87, 202, 195, 0.8) url("../images/mobile-next.png") no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

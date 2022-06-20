@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: all 1s ease;
-    background: $main-color url("../images/previous.png") no-repeat;
+    background: rgba(87, 202, 195, 0.8) url("../images/previous.png") no-repeat;
     animation: previous-button 2s infinite;
 
     &:hover {
@@ -54,7 +54,7 @@ body {
     right: 2%;
     width: 70px !important;
     height: 70px !important;
-    background: $main-color url("../images/forward.png") no-repeat;
+    background: rgba(87, 202, 195, 0.8) url("../images/forward.png") no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1412,7 +1412,7 @@ button {
         justify-content: center;
         align-items: center;
         transition: all 1s ease;
-        background: $main-color url("../images/mobile-prev.png") no-repeat;
+        background: rgba(87, 202, 195, 0.8) url("../images/mobile-prev.png") no-repeat;
         animation: previous-button 2s infinite;
 
         &:hover {
@@ -1440,7 +1440,7 @@ button {
         right: 2%;
         width: 50px !important;
         height: 50px !important;
-        background: $main-color url("../images/mobile-next.png") no-repeat;
+        background: rgba(87, 202, 195, 0.8) url("../images/mobile-next.png") no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
